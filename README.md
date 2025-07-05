@@ -1,3 +1,5 @@
+![Screenshot 2025-07-05 172215](https://github.com/user-attachments/assets/e4d2a988-fee5-4a0f-9b46-baeaf50f40dd)
+
 ## Technical Components
 
 ```mermaid
