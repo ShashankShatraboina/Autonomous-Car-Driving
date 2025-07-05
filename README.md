@@ -87,14 +87,6 @@ pip install -r requirements.txt
 python simulation.py
 ```
 
-## Configuration Options
-
-Modify these parameters in the code:
-- Number of lanes (`self.lanes`)
-- Road length (`self.road_length`)
-- Obstacle positions and sizes
-- Traffic light location (`self.traffic_light_pos`)
-- Vehicle parameters (`max_speed`, `acceleration`, etc.)
 
 ## Simulation Output
 
