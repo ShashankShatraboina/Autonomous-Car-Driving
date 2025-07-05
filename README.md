@@ -1,72 +1,82 @@
-# 🚗 Self-Driving Car Simulator
-
-A basic 2D simulation of an autonomous vehicle navigating a multi-lane road with dynamic traffic lights and static obstacles. The vehicle uses simplified perception, planning, and control algorithms to adjust its trajectory and behavior in real time.
+Here's a professional README description for your GitHub project:
 
 ---
 
-## 📌 Features
+# Self-Driving Car Simulation
 
-**Autonomous Navigation** along a center lane or alternate lanes when obstacles are detected.
-**Lane Changing** to avoid obstacles within a specified sensor range.
-**Traffic Light Detection** and response to green, yellow, and red states.
-**Speed Control** based on traffic signals and obstacles.
-**Matplotlib Animation** to visualize the car's motion, planned path, and environment in real-time.
+![Simulation Demo](https://via.placeholder.com/800x400.png?text=Simulation+GIF+Demo) *(Replace with actual animation GIF)*
 
----
+A real-time simulation demonstrating core autonomous vehicle concepts including perception, path planning, and control systems. The simulator visualizes how a self-driving car navigates through dynamic environments with obstacles and traffic signals.
 
-## 📷 Demo
+## Key Features
 
-![Simulator Preview](https://user-images.githubusercontent.com/your-image-link.gif)
+- **Multi-lane Road System** with configurable lane count and width
+- **Dynamic Obstacle Avoidance** using object detection and path replanning
+- **Traffic Light System** with state transitions (green/yellow/red)
+- **Path Planning Algorithm** that adapts to road conditions
+- **PID-like Controller** for steering and speed regulation
+- **Sensor Simulation** with limited detection range
+- **Real-time Visualization** using Matplotlib
 
-> *Animated simulation of the car navigating a 3-lane road with obstacles and a traffic light.*
+## Technical Components
 
----
-
-## 🧠 How It Works
-
-### 🧩 Modules
-
-1. **Perception**
-   Simulates basic LIDAR-like sensing to detect nearby obstacles and traffic lights.
-
-2. **Planning**
-   Generates a target path. If an obstacle is ahead in the current lane, the vehicle attempts to change lanes.
-
-3. **Control**
-   Adjusts steering and speed to follow the planned path using a lookahead approach.
-
-4. **Traffic Light Management**
-   Cycles between green → yellow → red every 100 frames. Vehicle reacts accordingly.
-
-
-### Prerequisites
-
-Ensure you have Python 3.7+ and the required libraries:
-
-```bash
-pip install matplotlib numpy
+```mermaid
+graph LR
+A[Perception] -->|Detected Objects| B[Planning]
+B -->|Target Path| C[Control]
+C -->|Vehicle Motion| A
 ```
 
----
+1. **Perception System**
+   - Obstacle detection within sensor range
+   - Traffic light state recognition
+   - Distance calculation to objects
 
-## 🚀 Running the Simulator
+2. **Planning System**
+   - Reference path generation
+   - Dynamic path modification for obstacle avoidance
+   - Traffic light response logic (stop/slow down)
 
-To run the simulation:
+3. **Control System**
+   - Lookahead point tracking
+   - Steering angle calculation
+   - Speed regulation with acceleration profiles
+
+## Dependencies
+
+- Python 3.7+
+- NumPy
+- Matplotlib
+
+## Installation & Usage
 
 ```bash
-python self_driving_sim.py
+git clone https://github.com/yourusername/self-driving-car-sim.git
+cd self-driving-car-sim
+pip install -r requirements.txt
+python simulation.py
 ```
 
-Make sure your file is named appropriately, or change the filename accordingly.
+## Configuration Options
 
----
+Modify these parameters in the code:
+- Number of lanes (`self.lanes`)
+- Road length (`self.road_length`)
+- Obstacle positions and sizes
+- Traffic light location (`self.traffic_light_pos`)
+- Vehicle parameters (`max_speed`, `acceleration`, etc.)
 
-## 📁 Project Structure
+## Simulation Output
 
-self-driving-car-simulator/
-├── self_driving_sim.py      # Main simulation code
-├── README.md                # Project documentation
+The animation shows:
+1. Autonomous vehicle (blue rectangle)
+2. Planned path (blue line)
+3. Obstacles (red circles)
+4. Traffic light (color-coded indicator)
+5. Lane markings (dashed lines)
+6. Dynamic speed display
 
+## Contribution
 
-
+Contributions are welcome! Please fork the repository and submit pull requests for:
 
