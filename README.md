@@ -39,7 +39,7 @@ pip install matplotlib numpy
 To run the simulation:
 
 ```bash
-python self_driving_sim.py
+python Car.py
 ```
 
 Make sure your file is named appropriately, or change the filename accordingly.
@@ -50,7 +50,7 @@ Make sure your file is named appropriately, or change the filename accordingly.
 
 ```
 self-driving-car-simulator/
-├── self_driving_sim.py      # Main simulation code
+├── Car.py      # Main simulation code
 ├── README.md                # Project documentation
 ```
 
@@ -65,8 +65,8 @@ self-driving-car-simulator/
 ## Installation & Usage
 
 ```bash
-git clone https://github.com/yourusername/self-driving-car-sim.git
-cd self-driving-car-sim
+git clone https://github.com/yourusername/Car.git
+cd Car
 pip install -r requirements.txt
 python simulation.py
 ```
