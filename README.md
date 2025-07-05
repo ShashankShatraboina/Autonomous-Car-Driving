@@ -1,19 +1,3 @@
-# Self-Driving Car Simulation
-
-![Simulation Demo](https://via.placeholder.com/800x400.png?text=Simulation+GIF+Demo) *(Replace with actual animation GIF)*
-
-A real-time simulation demonstrating core autonomous vehicle concepts including perception, path planning, and control systems. The simulator visualizes how a self-driving car navigates through dynamic environments with obstacles and traffic signals.
-
-## Key Features
-
-- **Multi-lane Road System** with configurable lane count and width
-- **Dynamic Obstacle Avoidance** using object detection and path replanning
-- **Traffic Light System** with state transitions (green/yellow/red)
-- **Path Planning Algorithm** that adapts to road conditions
-- **PID-like Controller** for steering and speed regulation
-- **Sensor Simulation** with limited detection range
-- **Real-time Visualization** using Matplotlib
-
 ## Technical Components
 
 ```mermaid
