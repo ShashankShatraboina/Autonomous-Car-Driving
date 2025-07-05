@@ -100,5 +100,5 @@ The animation shows:
 
 ## Contribution
 
-Contributions are welcome! Please fork the repository and submit pull requests for:
+Contributions are welcome! Please fork the repository 
 
