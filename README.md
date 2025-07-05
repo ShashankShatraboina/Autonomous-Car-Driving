@@ -73,23 +73,6 @@ self-driving-car-simulator/
 ---
 
 
-## 📃 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙌 Acknowledgments
-
-Inspired by basic concepts in autonomous driving and motion planning. Built using [Matplotlib](https://matplotlib.org/) and [NumPy](https://numpy.org/).
-
----
-
-Would you like a [markdown file version](f) or help [embedding demo videos or GIFs](f) into the README?
-
-
-
-
 ## Dependencies
 - Python 3.7+
 - NumPy
